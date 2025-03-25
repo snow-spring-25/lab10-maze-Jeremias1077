@@ -35,7 +35,7 @@ public class MazeCell
             _ => ""
         };
 
-        return $"{Id}{symbol}";
+        return $"{Id}{symbol} N: {North?.Id}; E: {East?.Id}; S: {South?.Id}; W: {West?.Id}";
     }
 
     private static int NextCellId = 0;
